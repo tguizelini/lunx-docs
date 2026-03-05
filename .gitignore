@@ -1,0 +1,12 @@
+# Ignorados por padrao (vale para qualquer repositorio que use este arquivo)
+
+# Mac files
+.DS_Store
+
+# Build outputs
+build/
+dist/
+
+# Node dependencies
+node_modules/
+

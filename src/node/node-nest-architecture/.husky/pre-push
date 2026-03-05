@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Executa os testes com cobertura e valida que a cobertura mínima de 70% foi atingida
+npx --no-install jest --coverage --ci --coverageThreshold='{"global": {"lines": 70}}'

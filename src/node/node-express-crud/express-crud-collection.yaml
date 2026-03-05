@@ -1,0 +1,163 @@
+type: collection.insomnia.rest/5.0
+name: Node-CRUD-Express
+meta:
+  id: wrk_04c19b90786a4ceab0c648fc2acdf79d
+  created: 1770010724119
+  modified: 1770010724119
+  description: ""
+collection:
+  - url: http://localhost:3000/api/health
+    name: Health
+    meta:
+      id: req_0a7fc8c1e1bc4cb7810eab811ab06e56
+      created: 1770010748030
+      modified: 1770015696625
+      isPrivate: false
+      description: ""
+      sortKey: -1770010748030
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/todos
+    name: Create
+    meta:
+      id: req_5f70da8b1d7b4e9c86f37f44425f67d8
+      created: 1770014601665
+      modified: 1770015488493
+      isPrivate: false
+      description: ""
+      sortKey: -1770010747980
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": ""
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/todos/74771609-0ebf-4bf6-be6c-4a204984cf16
+    name: Update
+    meta:
+      id: req_8b898dd2f85648b593d9e1a9af629c70
+      created: 1770014664305
+      modified: 1770015615034
+      isPrivate: false
+      description: ""
+      sortKey: -1770010747930
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"done": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/todos
+    name: List
+    meta:
+      id: req_40100e7b205f48859db1f20d4ac004aa
+      created: 1770015082827
+      modified: 1770015094991
+      isPrivate: false
+      description: ""
+      sortKey: -1770010747880
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/todos/67cb4946-b93e-455f-b378-c8ab89711f42
+    name: Find
+    meta:
+      id: req_b62a5876e106453a826af0f42194af35
+      created: 1770015103690
+      modified: 1770015520119
+      isPrivate: false
+      description: ""
+      sortKey: -1770010747830
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/api/todos/67cb4946-b93e-455f-b378-c8ab89711f42
+    name: Delete
+    meta:
+      id: req_4c97e8ed307a490a92ad82e28005ca2b
+      created: 1770015321329
+      modified: 1770015508505
+      isPrivate: false
+      description: ""
+      sortKey: -1770010747780
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.5.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_53f6c1913e17543bf90eeaabe87c953725074c29
+    created: 1770010724122
+    modified: 1770010724122
+environments:
+  name: Base Environment
+  meta:
+    id: env_53f6c1913e17543bf90eeaabe87c953725074c29
+    created: 1770010724121
+    modified: 1770010724121
+    isPrivate: false

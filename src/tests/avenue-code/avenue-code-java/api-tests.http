@@ -1,0 +1,54 @@
+### SiteScanner API - Exemplos de Requisições HTTP
+### Você pode usar este arquivo com extensões como REST Client no VS Code
+
+### 1. Buscar scan por ID (deve retornar 200)
+GET http://localhost:8080/scan/1
+Accept: application/json
+
+###
+
+### 2. Buscar scan por ID inexistente (deve retornar 404)
+GET http://localhost:8080/scan/99999
+Accept: application/json
+
+###
+
+### 3. Buscar scans por domínio ordenados por numPages (deve retornar 200)
+GET http://localhost:8080/scan/search/testdomain.com?orderBy=numPages
+Accept: application/json
+
+###
+
+### 4. Buscar scans por domínio ordenados por numBrokenLinks (deve retornar 200)
+GET http://localhost:8080/scan/search/testdomain.com?orderBy=numBrokenLinks
+Accept: application/json
+
+###
+
+### 5. Buscar scans com coluna de ordenação inválida (deve retornar 400)
+GET http://localhost:8080/scan/search/testdomain.com?orderBy=invalidColumn
+Accept: application/json
+
+###
+
+### 6. Deletar scan por ID (deve retornar 200)
+DELETE http://localhost:8080/scan/2
+
+###
+
+### 7. Tentar deletar scan já deletado ou inexistente (deve retornar 404)
+DELETE http://localhost:8080/scan/99999
+
+###
+
+### 8. Verificar se scan foi soft deleted (deleted=true mas ainda existe)
+GET http://localhost:8080/scan/2
+Accept: application/json
+
+###
+
+### 9. Buscar scan do exemplo.com
+GET http://localhost:8080/scan/search/example.com?orderBy=id
+Accept: application/json
+
+###

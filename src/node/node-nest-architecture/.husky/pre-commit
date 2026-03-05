@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Executa o lint e os testes relacionados aos arquivos modificados
+npx lint-staged

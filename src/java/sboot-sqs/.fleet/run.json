@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "spring-boot",
+            "name": "Spring-boot configuration",
+            "mainClass": "SbootSqsApplication",
+            "module": ""
+        }
+    ]
+}

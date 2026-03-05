@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "56662951-2b15-4575-9cf9-70cc5359effc",
+		"name": "BFF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1334750"
+	},
+	"item": [
+		{
+			"name": "tools/messages",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"playerId\": \"666-666-666\",\n        \"date\": \"2025-03-01\",\n        \"login\": \"tguizelini2\",\n        \"userName\": \"tguizelini123344\",\n        \"name\": \"Tiago2\",\n        \"lastName\": \"Guizelini2\",\n        \"document\": \"000111999123\",\n        \"documentType\": \"CPF\",\n        \"email\": \"tiago.guizelini2@opah.com.br\",\n        \"subject\": \"Subject mock value 92\",\n        \"category\": \"Regular\",\n        \"phoneNumber\": \"11911111234\",\n        \"coin\": \"BRL\",\n        \"state\": \"SC\",\n        \"source\": \"Source22\",\n        \"tools\": [\"tool112\", \"tool712\", \"tool62\"]\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tools/messages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tools",
+								"messages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dateStart\": \"2024-03-01\",\n    \"dateEnd\": \"2025-04-03\", \n    \"playerId\": null, \n    \"state\": null,\n    \"source\": null,\n    \"subject\": null,\n    \"document\": null,\n    \"email\": null,\n    \"phoneNumber\": null,\n    \"category\": null,\n    \"coin\": \"USD\",\n    \"name\": null,\n    \"lastName\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tools/messages/list?limit=10&page=1&orderBy=name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tools",
+								"messages",
+								"list"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10",
+									"description": "quantidade de itens por página"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "número da página"
+								},
+								{
+									"key": "orderBy",
+									"value": "name",
+									"description": "campo que irá ordenar o resultado"
+								},
+								{
+									"key": "search",
+									"value": "Busca por um texto",
+									"description": "texto que será buscado.. é preciso definir quais campos serão levados em consideração para o search. Por enquanto, estou levando em conta os campos SUBJECT, LOGIN, NAME e LASTNAME",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

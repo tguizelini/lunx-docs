@@ -1,0 +1,44 @@
+10:23:11 From Alisson Santos to Everyone:
+	Something that that definitely happens in every project is requirements shift, priority shift. Can you provide some examples where you've dealt with that, and what the outcomes were?
+10:25:01 From Alisson Santos to Everyone:
+	How would you go about explaining technical stuff you are collaborating on to that non technical stakeholder?
+10:26:04 From Alisson Santos to Everyone:
+	Could maybe give me an anecdote about the most difficult technical challenge that you faced and how you solved it?
+10:31:03 From Alisson Santos to Everyone:
+	Why Android versus other types of development? What led you into this particular specialty?
+10:31:21 From Alisson Santos to Everyone:
+	How do you handle receiving feedback about your work? Could you provide any example where that feedback has led to a better end result?
+10:31:39 From Alisson Santos to Everyone:
+	Could you tell me about a particularly challenging bug that you've encountered how did you go about resolving it? What tools did you use?
+10:31:59 From Alisson Santos to Everyone:
+	What do you consider a good approach to testing in mobile software in a general sense?
+10:34:43 From Alisson Santos to Everyone:
+	Have you worked with any CI/CD systems on past projects?
+10:35:50 From Alisson Santos to Everyone:
+	What exactly is the android activity life cycle?
+10:40:44 From Alisson Santos to Everyone:
+	Considering the Android life cycle, how do you handle the system configuration changes or in general configuration changes?
+10:41:50 From Alisson Santos to Everyone:
+	In Android, the most common approach to handle system configuration changes, such as screen orientation changes, is to use the onSaveInstanceState() and onRestoreInstanceState() methods.
+10:42:31 From Alisson Santos to Everyone:
+	What are the different data storage options that we have at our disposal now?
+10:44:08 From Alisson Santos to Everyone:
+	https://pastebin.mozilla.org/70N0q0H8
+10:45:24 From Alisson Santos to Everyone:
+	How do you manage background tasks and threading in Android using Kotlin?
+10:47:14 From Alisson Santos to Everyone:
+	What are some common issues you might run into with concurrency and how would you fix them?
+10:48:06 From Alisson Santos to Everyone:
+	https://pastebin.mozilla.org/yWtT70Zz
+10:48:38 From Alisson Santos to Everyone:
+	What steps do you take to secure data and ensure privacy in android applications?
+10:49:52 From Alisson Santos to Everyone:
+	https://pastebin.mozilla.org/uLyNff2k
+10:52:01 From Alisson Santos to Everyone:
+	Have you done much with material design?
+10:52:45 From Alisson Santos to Everyone:
+	Can you give an example of a material design component that you've used?
+10:52:57 From Alisson Santos to Everyone:
+	When you are building Android applications, how do you approach dependency injection?
+10:57:58 From Alisson Santos to Everyone:
+	How would you organize your data layer? How would you organize your retrofit components?

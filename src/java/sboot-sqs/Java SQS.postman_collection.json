@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "36e0d83f-64a6-4d2d-9bfa-49c84dfbb58d",
+		"name": "Java SQS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1334750"
+	},
+	"item": [
+		{
+			"name": "SendMessage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"my message from producer 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/producer/send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"producer",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
